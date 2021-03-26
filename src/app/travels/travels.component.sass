@@ -1,0 +1,82 @@
+#travelsCont
+    background-color: rgb(242,236,230)
+    padding-top: 5em
+    display: grid
+    grid-template-rows: 10em 30em
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'h1 h1' 'greece .'
+
+    h1
+        grid-area: h1
+        font-family: 'Indie Flower', cursive
+        font-weight: bold
+        font-size: 4em
+        color: blue
+        justify-self: center
+        align-self: center
+
+    #divGr
+        grid-area: greece
+        justify-self: end
+        align-self: center
+        margin-right: 5em
+        height: 18rem
+        border-radius: 50%
+        cursor: pointer
+        
+        .card-body
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: 'Indie Flower', cursive
+            background-color: orange
+            border-radius: 50%
+
+            a
+                font-size: 3.5em
+                font-weight: bold
+                text-decoration: none
+                color: black
+
+#greeceCont
+    display: none
+    background-color: rgb(242,236,230)
+    padding-top: 5em
+    
+    h1
+        text-align: center
+        font-family: 'Indie Flower', cursive
+        font-weight: bold
+        font-size: 4em
+        color: blue
+
+    #divBack
+        display: flex
+        justify-content: center
+
+        #back
+            background-color: blue
+            border: none
+            color: white
+            border-radius: 5px
+            width: 5em
+            height: 3em
+
+        #back:hover
+            background-color: #3640ff
+
+    #content
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+
+.card
+    cursor: pointer
+    margin: 2em
+
+.card-body
+    text-align: center
+
+
+
+    

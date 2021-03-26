@@ -1,1 +1,28 @@
-<p>travels works!</p>
+<div id="travelsCont">
+    <h1>Travels</h1>
+    <div id="divGr" class="card" style="width: 18rem;">
+        <div class="card-body">
+            <a class="card-title">Greece</a>
+        </div>
+    </div>
+</div>
+<div id="greeceCont">
+    <h1>Greece</h1>
+    <div id="divBack">
+        <button id="back">go back</button>
+    </div>
+    <div id="content">
+        <div *ngFor="let greece of greeceTravels ; index as Id">
+            <div class="card" style="width: 18rem;" routerLink="details/{{Id}}">
+                <img src="{{ greece.img }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{greece.destination}}</h5>
+                    <p class="card-text">{{greece.description}}</p>
+                    <p class="card-text">📅 from {{greece.start}}</p>
+                    <p class="card-text">{{greece.duration}} Nights</p>
+                    <p class="card-text"><b>€ {{greece.price}}</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
