@@ -1,0 +1,47 @@
+#homeCont
+    display: grid
+    grid-template-rows: 10em 10em 10em 35em
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'h1 h1' 'para para' 'para2 para2' 'blog travels'
+    background-color: rgb(242,236,230)
+    padding-top: 5em
+    
+    h1
+        grid-area: h1
+        justify-self: center
+        align-self: center
+        font-family: 'Indie Flower', cursive
+        font-weight: bold
+        font-size: 4em
+        color: blue
+
+        span
+            color: yellow
+            text-shadow: 0 0 10px black 
+
+    #para
+        grid-area: para
+        justify-self: center
+        align-self: center
+        width: 70rem
+        text-align: center
+        font-size: 1.5em
+
+    #para2
+        grid-area: para2
+        justify-self: center
+        font-size: 1.5em
+
+    #blog
+        grid-area: blog
+        justify-self: end
+        margin-right: 5em
+        height: 25em
+
+    #travels
+        grid-area: travels
+        justify-self: start
+        margin-left: 5em
+        height: 25em
+
+
