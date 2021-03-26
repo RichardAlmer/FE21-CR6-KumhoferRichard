@@ -11,6 +11,9 @@ import { TravelsComponent } from './travels/travels.component';
 import { CartComponent } from './cart/cart.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Details2Component } from './details2/details2.component'
 
 @NgModule({
   declarations: [
@@ -23,10 +26,13 @@ import { DetailsComponent } from './details/details.component';
     CartComponent,
     FooterComponent,
     DetailsComponent,
+    CheckoutComponent,
+    Details2Component,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

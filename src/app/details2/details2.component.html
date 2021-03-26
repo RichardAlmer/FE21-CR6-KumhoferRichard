@@ -1,0 +1,10 @@
+<div id="detailsCont">
+    <h1>{{curTravel.destination}}</h1>
+    <button routerLink="/travels">go back</button>
+    <img src="{{curTravel.img}}" alt="">
+    <p class="card-text">{{curTravel.description}}</p>
+    <p class="card-text">📅 from {{curTravel.start}}</p>
+    <p class="card-text">{{curTravel.duration}} Nights</p>
+    <p class="card-text"><b>€ {{curTravel.price}}</b></p>
+    <button (click)="addToCart()">Buy</button>
+</div>

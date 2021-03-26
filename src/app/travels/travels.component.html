@@ -5,11 +5,35 @@
             <a class="card-title">Greece</a>
         </div>
     </div>
+    <div id="divSp" class="card" style="width: 18rem;">
+        <div class="card-body">
+            <a class="card-title">Spain</a>
+        </div>
+    </div>
+    <div id="form">
+        <form class="row g-3" [formGroup]="contact" (ngSubmit)="onSubmit()">
+            <div class="col-12">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Full Name" formControlName="fullName">
+            </div>
+            <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="TravelGavel@email.com" formControlName="email">
+            </div>
+            <div class="col-12">
+                <label for="massage" class="form-label">Your Massage</label>
+                <input type="massage" class="form-control" id="massage" placeholder="Your Massage" formControlName="massage">
+            </div>
+            <div id="mesBtn">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+    </div>
 </div>
 <div id="greeceCont">
     <h1>Greece</h1>
     <div id="divBack">
-        <button id="back">go back</button>
+        <button id="backGr">go back</button>
     </div>
     <div id="content">
         <div *ngFor="let greece of greeceTravels ; index as Id">
@@ -21,6 +45,26 @@
                     <p class="card-text">📅 from {{greece.start}}</p>
                     <p class="card-text">{{greece.duration}} Nights</p>
                     <p class="card-text"><b>€ {{greece.price}}</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="spainCont">
+    <h1>Spain</h1>
+    <div id="divBack">
+        <button id="backSp">go back</button>
+    </div>
+    <div id="content">
+        <div *ngFor="let spain of spainTravels ; index as Id">
+            <div class="card" style="width: 18rem;" routerLink="details2/{{Id}}">
+                <img src="{{ spain.img }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{spain.destination}}</h5>
+                    <p class="card-text">{{spain.description}}</p>
+                    <p class="card-text">📅 from {{spain.start}}</p>
+                    <p class="card-text">{{spain.duration}} Nights</p>
+                    <p class="card-text"><b>€ {{spain.price}}</b></p>
                 </div>
             </div>
         </div>

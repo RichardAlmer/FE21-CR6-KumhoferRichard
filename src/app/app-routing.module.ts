@@ -5,6 +5,8 @@ import { CartComponent } from './cart/cart.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { TravelsComponent } from './travels/travels.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { Details2Component } from './details2/details2.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,10 @@ const routes: Routes = [
     path: "cart", component: CartComponent
   },{
     path: "travels/details/:Id", component: DetailsComponent
+  },{
+    path: "travels/details2/:Id", component: Details2Component
+  },{
+    path: "checkout", component: CheckoutComponent
   }
 ];
 

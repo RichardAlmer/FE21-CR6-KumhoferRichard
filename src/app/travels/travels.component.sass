@@ -2,9 +2,9 @@
     background-color: rgb(242,236,230)
     padding-top: 5em
     display: grid
-    grid-template-rows: 10em 30em
+    grid-template-rows: 10em 30em 30em
     grid-template-columns: 1fr 1fr
-    grid-template-areas: 'h1 h1' 'greece .'
+    grid-template-areas: 'h1 h1' 'greece spain' 'form form'
 
     h1
         grid-area: h1
@@ -38,6 +38,38 @@
                 text-decoration: none
                 color: black
 
+    #divSp
+        grid-area: spain
+        justify-self: start
+        align-self: center
+        margin-left: 5em
+        height: 18rem
+        border-radius: 50%
+        cursor: pointer
+        
+        .card-body
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: 'Indie Flower', cursive
+            background-color: orange
+            border-radius: 50%
+
+            a
+                font-size: 3.5em
+                font-weight: bold
+                text-decoration: none
+                color: black
+
+    #form
+        grid-area: form
+        margin: 0 5em 0 5em
+
+        #mesBtn
+            display: flex
+            justify-content: center
+
+
 #greeceCont
     display: none
     background-color: rgb(242,236,230)
@@ -54,7 +86,39 @@
         display: flex
         justify-content: center
 
-        #back
+        #backGr
+            background-color: blue
+            border: none
+            color: white
+            border-radius: 5px
+            width: 5em
+            height: 3em
+
+        #back:hover
+            background-color: #3640ff
+
+    #content
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+
+#spainCont
+    display: none
+    background-color: rgb(242,236,230)
+    padding-top: 5em
+    
+    h1
+        text-align: center
+        font-family: 'Indie Flower', cursive
+        font-weight: bold
+        font-size: 4em
+        color: blue
+
+    #divBack
+        display: flex
+        justify-content: center
+
+        #backSp
             background-color: blue
             border: none
             color: white
@@ -77,6 +141,3 @@
 .card-body
     text-align: center
 
-
-
-    

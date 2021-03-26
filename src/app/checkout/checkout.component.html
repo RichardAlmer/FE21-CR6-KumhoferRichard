@@ -1,0 +1,39 @@
+<div id="checkCont">
+    <h1>Checkout</h1>
+    <div id="divBtn">
+        <button id="back" routerLink="/travels">go back</button>        
+    </div>
+    <form class="row g-3" [formGroup]="contact" (ngSubmit)="onSubmit()">
+        <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First Name" formControlName="firstName">
+        </div>
+        <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name" formControlName="lastName">
+        </div>
+        <div class="col-md-10">
+            <label for="street" class="form-label">Street</label>
+            <input type="text" class="form-control" id="street" placeholder="Street" formControlName="street">
+        </div>
+        <div class="col-md-2">
+            <label for="number" class="form-label">No</label>
+            <input type="number" class="form-control" id="number" placeholder="0" formControlName="streetNo">
+        </div>
+        <div class="col-md-8">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" placeholder="City" formControlName="city">
+        </div>
+        <div class="col-md-4">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="0000" formControlName="zip">
+        </div>
+        <div class="col">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="TravelGavel@email.com" formControlName="email">
+        </div>
+        <div id="checkBtn">
+            <button type="submit" class="btn btn-primary">Checkout</button>
+        </div>
+    </form>
+</div>
