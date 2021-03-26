@@ -1,0 +1,70 @@
+#blogCont
+    display: grid
+    grid-template-rows: 10em 14em 35em 35em 35em
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'h1 h1' 'para para' 'NA SA' 'EU AF' 'AS AU'
+    background-color: rgb(242,236,230)
+    padding-top: 5em
+    
+    h1
+        grid-area: h1
+        justify-self: center
+        align-self: center
+        font-family: 'Indie Flower', cursive
+        font-weight: bold
+        font-size: 4em
+        color: blue
+    
+    #para
+        grid-area: para
+        justify-self: center
+        align-self: center
+        width: 70rem
+        text-align: center
+        font-size: 1.5em  
+        padding-bottom: 4em           
+
+    #NA
+        grid-area: NA
+        justify-self: end
+        margin-right: 5em
+        height: 30em
+
+    #SA
+        grid-area: SA
+        justify-self: start
+        margin-left: 5em
+        height: 30em
+
+    #EU
+        grid-area: EU
+        justify-self: end
+        margin-right: 5em
+        height: 30em
+
+    #AF
+        grid-area: AF
+        justify-self: start
+        margin-left: 5em
+        height: 30em
+
+    #AS
+        grid-area: AS
+        justify-self: end
+        margin-right: 5em
+        height: 30em
+
+    #AU
+        grid-area: AU
+        justify-self: start
+        margin-left: 5em
+        height: 30em
+
+    h5
+        font-size: 2em
+        margin-top: 1em
+        margin-bottom: 1em
+
+    .card
+        border-radius: 50%
+        box-shadow: 0 0 10px black
